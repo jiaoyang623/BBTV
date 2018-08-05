@@ -1,0 +1,94 @@
+{
+  "list": [
+    {
+      "name": "中央1",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv1.m3u8"
+      ]
+    },
+    {
+      "name": "中央2",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv2.m3u8"
+      ]
+    },
+    {
+      "name": "中央3",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv3.m3u8"
+      ]
+    },
+    {
+      "name": "中央4",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv4.m3u8"
+      ]
+    },
+    {
+      "name": "中央5",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv5.m3u8"
+      ]
+    },
+    {
+      "name": "中央6",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv6.m3u8"
+      ]
+    },
+    {
+      "name": "中央7",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv7.m3u8"
+      ]
+    },
+    {
+      "name": "中央8",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv8.m3u8"
+      ]
+    },
+    {
+      "name": "中央9",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv9.m3u8"
+      ]
+    },
+    {
+      "name": "中央10",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv10.m3u8"
+      ]
+    },
+    {
+      "name": "中央11",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv11.m3u8"
+      ]
+    },
+    {
+      "name": "中央12",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv12.m3u8"
+      ]
+    },
+    {
+      "name": "中央13",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv13.m3u8"
+      ]
+    },
+    {
+      "name": "中央14",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv14.m3u8"
+      ]
+    },
+    {
+      "name": "中央15",
+      "uri": [
+        "http://ivi.bupt.edu.cn/hls/cctv15.m3u8"
+      ]
+    }
+  ]
+}

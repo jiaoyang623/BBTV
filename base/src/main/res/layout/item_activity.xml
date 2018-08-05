@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="android.content.pm.ActivityInfo" />
+
+        <variable
+            name="presenter"
+            type="guru.ioio.base.ActivityListActivity" />
+    </data>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{(v)->presenter.onItemClick(data)}"
+        android:padding="10dp"
+        android:text="@{data.name.substring(data.name.lastIndexOf('.')+1)}"
+        android:textColor="#ff000000"
+        android:textSize="16sp" />
+</layout>
