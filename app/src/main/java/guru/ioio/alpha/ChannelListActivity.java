@@ -41,7 +41,7 @@ public class ChannelListActivity extends BaseActivity {
         mBinding.setPresenter(this);
         mAdapter = new RVBindingBaseAdapter<>(R.layout.item_channel, guru.ioio.alpha.BR.data);
         mAdapter.addPresenter(guru.ioio.alpha.BR.presenter, this);
-        mBinding.recycler.setLayoutManager(new GridLayoutManager(this, 1, GridLayoutManager.VERTICAL, false));
+        mBinding.recycler.setLayoutManager(new GridLayoutManager(this, 3, GridLayoutManager.VERTICAL, false));
         mBinding.recycler.setAdapter(mAdapter);
 
         loadChannels();
