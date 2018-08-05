@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
+import android.databinding.ObservableBoolean;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
@@ -12,7 +13,7 @@ import com.google.gson.Gson;
 
 import org.apache.commons.io.IOUtils;
 
-import java.io.InputStream;
+import java.net.URI;
 import java.util.List;
 
 import guru.ioio.alpha.databinding.ActivityChannelListBinding;
@@ -25,6 +26,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
 public class ChannelListActivity extends BaseActivity {
+    public ObservableBoolean isLoading = new ObservableBoolean(true);
     private ActivityChannelListBinding mBinding;
     private RVBindingBaseAdapter<ChannelBean> mAdapter;
 
@@ -45,24 +47,25 @@ public class ChannelListActivity extends BaseActivity {
         loadChannels();
     }
 
+
     @SuppressLint("CheckResult")
     private void loadChannels() {
+        isLoading.set(true);
         Observable.create(s -> {
-            try (InputStream in = getAssets().open("channels.json")) {
-                String data = IOUtils.toString(in, "utf-8");
-                Gson gson = new Gson();
-                ChannelRoot root = gson.fromJson(data, ChannelRoot.class);
-                if (root != null && root.list != null) {
-                    s.onNext(root.list);
-                } else {
-                    s.onError(new Exception("no data"));
-                }
-                s.onComplete();
+            final String uri = "https://raw.githubusercontent.com/jiaoyang623/BBTV/master/app/src/main/assets/channels.json";
+            String data = IOUtils.toString(URI.create(uri), "utf-8");
+            Gson gson = new Gson();
+            ChannelRoot root = gson.fromJson(data, ChannelRoot.class);
+            if (root != null && root.list != null) {
+                s.onNext(root.list);
+            } else {
+                s.onError(new Exception("no data"));
             }
+            s.onComplete();
         }).subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(list -> mAdapter.add((List<ChannelBean>) list), e -> {
-                });
+                }, () -> isLoading.set(false));
     }
 
     public boolean onItemClick(ChannelBean bean) {
