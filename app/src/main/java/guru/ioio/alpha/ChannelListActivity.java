@@ -52,7 +52,7 @@ public class ChannelListActivity extends BaseActivity {
     private void loadChannels() {
         isLoading.set(true);
         Observable.create(s -> {
-            final String uri = "https://raw.githubusercontent.com/jiaoyang623/BBTV/master/app/src/main/assets/channels.json";
+            final String uri = "https://raw.githubusercontent.com/jiaoyang623/BBTV/master/app/src/main/assets/channels.json?t=" + System.currentTimeMillis();
             String data = IOUtils.toString(URI.create(uri), "utf-8");
             Gson gson = new Gson();
             ChannelRoot root = gson.fromJson(data, ChannelRoot.class);
