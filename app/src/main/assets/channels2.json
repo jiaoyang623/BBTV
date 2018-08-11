@@ -5,28 +5,28 @@
       "channels": [
         {
           "name": "CCTV1",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-cctv1/HD-2500k-1080P-cctv1",
             "http://223.110.243.155:80/PLTV/3/224/3221227400/index.m3u8"
           ]
         },
         {
           "name": "CCTV2HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225612/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227412/index.m3u8"
           ]
         },
         {
           "name": "CCTV2",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-2/cctv-2",
             "http://223.110.243.155:80/PLTV/3/224/3221227207/index.m3u8"
           ]
         },
         {
           "name": "CCTV3HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225611/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225588/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227415/index.m3u8"
@@ -34,26 +34,26 @@
         },
         {
           "name": "CCTV3",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-3/cctv-3"
           ]
         },
         {
           "name": "CCTV4HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225610/index.m3u8"
           ]
         },
         {
           "name": "CCTV4",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-4/cctv-4",
             "http://223.110.243.155:80/PLTV/3/224/3221225534/index.m3u8"
           ]
         },
         {
           "name": "CCTV5HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225489/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221226324/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227166/index.m3u8",
@@ -62,7 +62,7 @@
         },
         {
           "name": "CCTV5+HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225494/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225604/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227465/index.m3u8"
@@ -70,19 +70,19 @@
         },
         {
           "name": "CCTV5",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-5/cctv-5"
           ]
         },
         {
           "name": "CCTV5+",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/hdcctv05plus/hdcctv05plus"
           ]
         },
         {
           "name": "CCTV6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225609/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225548/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227209/index.m3u8"
@@ -90,27 +90,27 @@
         },
         {
           "name": "CCTV6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-6/cctv-6"
           ]
         },
         {
           "name": "CCTV7HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225608/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227392/index.m3u8"
           ]
         },
         {
           "name": "CCTV7",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-7/cctv-7",
             "http://223.110.243.155:80/PLTV/3/224/3221225546/index.m3u8"
           ]
         },
         {
           "name": "CCTV8HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225492/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227204/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227205/index.m3u8",
@@ -119,81 +119,81 @@
         },
         {
           "name": "CCTV8",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-cctv8/HD-2500k-1080P-cctv8"
           ]
         },
         {
           "name": "CCTV9HD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225532/index.m3u8"
           ]
         },
         {
           "name": "CCTV9",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-9/cctv-9"
           ]
         },
         {
           "name": "CCTV1",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-10/cctv-10",
             "http://223.110.243.155:80/PLTV/3/224/3221225550/index.m3u8"
           ]
         },
         {
           "name": "CCTV11",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-11/cctv-11",
             "http://223.110.243.155:80/PLTV/3/224/3221225552/index.m3u8"
           ]
         },
         {
           "name": "CCTV12HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225605/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227406/index.m3u8"
           ]
         },
         {
           "name": "CCTV12",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-12/cctv-12",
             "http://223.110.243.155:80/PLTV/3/224/3221225556/index.m3u8"
           ]
         },
         {
           "name": "CCTV13",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-13/cctv-13",
             "http://223.110.243.155:80/PLTV/3/224/3221225560/index.m3u8"
           ]
         },
         {
           "name": "CCTV14HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225604/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227409/index.m3u8"
           ]
         },
         {
           "name": "CCTV14",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-14/cctv-14",
             "http://223.110.243.155:80/PLTV/3/224/3221227201/index.m3u8"
           ]
         },
         {
           "name": "CCTV15",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/cctv-15/cctv-15",
             "http://223.110.243.155:80/PLTV/3/224/3221225568/index.m3u8"
           ]
         },
         {
           "name": "CCTV1HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225490/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225530/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221226316/index.m3u8"
@@ -206,37 +206,37 @@
       "channels": [
         {
           "name": "\u51e4\u51f0\u4e2d\u6587",
-          "url": [
+          "uri": [
             "http://223.110.243.165/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8"
           ]
         },
         {
           "name": "\u51e4\u51f0\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226922/index.m3u8"
           ]
         },
         {
           "name": "\u51e4\u51f0\u536b\u89c6",
-          "url": [
+          "uri": [
             "rtmp://s1.yy.com/tmall/201701302147"
           ]
         },
         {
           "name": "\u51e4\u51f0\u8d44\u8bafHD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226923/index.m3u8"
           ]
         },
         {
           "name": "\u51e4\u51f0\u8d44\u8baf",
-          "url": [
+          "uri": [
             "http://223.110.243.165/ott.js.chinamobile.com/PLTV/2510088/224/3221227163/index.m3u8"
           ]
         },
         {
           "name": "\u51e4\u51f0\u9999\u6e2fHD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226975/index.m3u8"
           ]
         }
@@ -247,127 +247,127 @@
       "channels": [
         {
           "name": "Newtv\u4e2d\u56fd\u529f\u592b",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226935/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u4e2d\u56fd\u640f\u51fb",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226656/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u5065\u5eb7\u6709\u7ea6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225545/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u519b\u4e8b\u8bc4\u8bba",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225533/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u519b\u65c5\u5267\u573a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225531/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u519c\u4e1a\u81f4\u5bcc",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225537/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u52a8\u4f5c\u7535\u5f71",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225529/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u52a8\u753b\u738b\u56fd",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225555/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u53e4\u88c5\u5267\u573a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225527/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u5b8c\u7f8e\u6e38\u620f",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225539/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u5bb6\u5ead\u5267\u573a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225549/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u60ca\u609a\u60ac\u7591",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225561/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u660e\u661f\u5927\u7247",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225535/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u6d77\u5916\u5267\u573a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225547/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u6f6e\u5988\u8fa3\u5a46",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226983/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u7231\u60c5\u559c\u5267",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225525/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u7cbe\u54c1\u4f53\u80b2",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225543/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u7cbe\u54c1\u5927\u5267",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225569/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u7cbe\u54c1\u7535\u5f71",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225567/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u7cbe\u54c1\u7eaa\u5f55",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225557/index.m3u8"
           ]
         },
         {
           "name": "Newtv\u91d1\u724c\u7efc\u827a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225559/index.m3u8"
           ]
         }
@@ -378,45 +378,45 @@
       "channels": [
         {
           "name": "\u4e1c\u5357\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225598/index.m3u8"
           ]
         },
         {
           "name": "\u4e1c\u5357\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225598/index.m3u8"
           ]
         },
         {
           "name": "\u4e1c\u65b9\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225693/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227208/index.m3u8"
           ]
         },
         {
           "name": "\u4e1c\u65b9\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-dongfangstv/HD-2500k-1080P-dongfangstv",
             "http://223.110.243.155:80/PLTV/3/224/3221225558/index.m3u8"
           ]
         },
         {
           "name": "\u4e91\u5357\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225591/index.m3u8"
           ]
         },
         {
           "name": "\u5185\u8499\u53e4\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225624/index.m3u8"
           ]
         },
         {
           "name": "\u5317\u4eac\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225502/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225574/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227246/index.m3u8"
@@ -424,75 +424,75 @@
         },
         {
           "name": "\u5317\u4eac\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-beijingstv/HD-2500k-1080P-beijingstv"
           ]
         },
         {
           "name": "\u56db\u5ddd\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225600/index.m3u8"
           ]
         },
         {
           "name": "\u56db\u5ddd\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225570/index.m3u8"
           ]
         },
         {
           "name": "\u5929\u6d25\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225588/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227212/index.m3u8"
           ]
         },
         {
           "name": "\u5929\u6d25\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225562/index.m3u8"
           ]
         },
         {
           "name": "\u5b81\u590f\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225628/index.m3u8"
           ]
         },
         {
           "name": "\u5b89\u5fbd\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225590/index.m3u8"
           ]
         },
         {
           "name": "\u5b89\u5fbd\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225634/index.m3u8"
           ]
         },
         {
           "name": "\u5c71\u4e1c\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225591/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227258/index.m3u8"
           ]
         },
         {
           "name": "\u5c71\u4e1c\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225586/index.m3u8"
           ]
         },
         {
           "name": "\u5c71\u897f\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225576/index.m3u8"
           ]
         },
         {
           "name": "\u5e7f\u4e1c\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225589/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225578/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225592/index.m3u8",
@@ -501,25 +501,25 @@
         },
         {
           "name": "\u5e7f\u4e1c\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-guangdongstv/HD-2500k-1080P-guangdongstv"
           ]
         },
         {
           "name": "\u5e7f\u897f\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225554/index.m3u8"
           ]
         },
         {
           "name": "\u65b0\u7586\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225523/index.m3u8"
           ]
         },
         {
           "name": "\u6c5f\u82cf\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225504/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227185/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227255/index.m3u8"
@@ -527,20 +527,20 @@
         },
         {
           "name": "\u6c5f\u897f\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225599/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225536/index.m3u8"
           ]
         },
         {
           "name": "\u6cb3\u5317\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225602/index.m3u8"
           ]
         },
         {
           "name": "\u6d59\u6c5f\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225505/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225544/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227215/index.m3u8"
@@ -548,13 +548,13 @@
         },
         {
           "name": "\u6d59\u6c5f\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-zhejiangstv/HD-2500k-1080P-zhejiangstv"
           ]
         },
         {
           "name": "\u6df1\u5733\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225592/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225582/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227217/index.m3u8"
@@ -562,25 +562,25 @@
         },
         {
           "name": "\u6df1\u5733\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-shenzhenstv/HD-2500k-1080P-shenzhenstv"
           ]
         },
         {
           "name": "\u6e56\u5317\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221227211/index.m3u8"
           ]
         },
         {
           "name": "\u6e56\u5317\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225630/index.m3u8"
           ]
         },
         {
           "name": "\u6e56\u5357\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225506/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227191/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227220/index.m3u8"
@@ -588,81 +588,81 @@
         },
         {
           "name": "\u6e56\u5357\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-hunanstv/HD-2500k-1080P-hunanstv"
           ]
         },
         {
           "name": "\u7518\u8083\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225590/index.m3u8"
           ]
         },
         {
           "name": "\u79fb\u52a8\u6e56\u5357\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://223.110.243.149/PLTV/3/224/3221227220/.m3u8"
           ]
         },
         {
           "name": "\u897f\u85cf\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225579/index.m3u8"
           ]
         },
         {
           "name": "\u8d35\u5dde\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225540/index.m3u8"
           ]
         },
         {
           "name": "\u8fbd\u5b81\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225593/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225566/index.m3u8"
           ]
         },
         {
           "name": "\u91cd\u5e86\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221227421/index.m3u8"
           ]
         },
         {
           "name": "\u91cd\u5e86\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225594/index.m3u8"
           ]
         },
         {
           "name": "\u9655\u897f\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225498/index.m3u8"
           ]
         },
         {
           "name": "\u9655\u897f\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225626/index.m3u8"
           ]
         },
         {
           "name": "\u9752\u6d77\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225580/index.m3u8"
           ]
         },
         {
           "name": "\u9ed1\u9f99\u6c5f\u536b\u89c6HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225594/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227252/index.m3u8"
           ]
         },
         {
           "name": "\u9ed1\u9f99\u6c5f\u536b\u89c6",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-heilongjiangstv/HD-2500k-1080P-heilongjiangstv"
           ]
         }
@@ -673,171 +673,171 @@
       "channels": [
         {
           "name": "CETV1",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225622/index.m3u8"
           ]
         },
         {
           "name": "CGTN",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225519/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225572/index.m3u8"
           ]
         },
         {
           "name": "CHC\u52a8\u4f5c\u7535\u5f7136P",
-          "url": [
+          "uri": [
             "http://hbmc.chinashadt.com:2739/live/dzdy.stream_360p/playlist.m3u8"
           ]
         },
         {
           "name": "CNC",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221227441/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227444/index.m3u8"
           ]
         },
         {
           "name": "PP\u4f53\u80b2",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225675/index.m3u8"
           ]
         },
         {
           "name": "SDETV",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225614/index.m3u8"
           ]
         },
         {
           "name": "\u4e0a\u6d77\u7eaa\u5b9eHD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221227395/index.m3u8"
           ]
         },
         {
           "name": "\u4f18\u6f2b\u5361\u901a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226982/index.m3u8"
           ]
         },
         {
           "name": "\u5317\u4eac\u7eaa\u5b9eHD",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221227397/index.m3u8"
           ]
         },
         {
           "name": "\u5361\u9177\u5c11\u513f",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225616/index.m3u8"
           ]
         },
         {
           "name": "\u56fd\u5b66\u4e0e\u5bb6\u9053",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226392/index.m3u8"
           ]
         },
         {
           "name": "\u5b9d\u9e211HD",
-          "url": [
+          "uri": [
             "http://124.47.33.200/PLTV/88888888/224/3221225658/index.m3u8"
           ]
         },
         {
           "name": "\u5bb6\u6709\u8d2d\u7269",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226593/index.m3u8"
           ]
         },
         {
           "name": "\u5f90\u5dde1",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225945/index.m3u8"
           ]
         },
         {
           "name": "\u5f90\u5dde2",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225947/index.m3u8"
           ]
         },
         {
           "name": "\u5f90\u5dde3",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225949/index.m3u8"
           ]
         },
         {
           "name": "\u5f90\u5dde4",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225951/index.m3u8"
           ]
         },
         {
           "name": "\u6587\u5a31",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226599/index.m3u8"
           ]
         },
         {
           "name": "\u65b0\u534e\u793e\u4e2d\u6587",
-          "url": [
+          "uri": [
             "http://live.xinhuashixun.com/live/chn01/desc.m3u8"
           ]
         },
         {
           "name": "\u65b0\u897f\u5170- Freeview28",
-          "url": [
+          "uri": [
             "http://live.936.nz:1935/live/ts.stream_360p/playlist.m3u8"
           ]
         },
         {
           "name": "\u65b0\u95fb",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221226601/index.m3u8"
           ]
         },
         {
           "name": "\u6c5f\u82cf\u7535\u89c6\u53f0",
-          "url": [
+          "uri": [
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-jiangsustv/HD-2500k-1080P-jiangsustv"
           ]
         },
         {
           "name": "\u6e05\u534e\u5927\u5b66\u7535\u89c6\u53f0",
-          "url": [
+          "uri": [
             "http://v.cic.tsinghua.edu.cn:8080/live/tsinghuatv.flv"
           ]
         },
         {
           "name": "\u70ab\u52a8\u5361\u901a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225694/index.m3u8"
           ]
         },
         {
           "name": "\u7f8e\u56fd\u4e2d\u6587\u53f0",
-          "url": [
+          "uri": [
             "http://media3.sinovision.net:1935/live/livestream/playlist.m3u8"
           ]
         },
         {
           "name": "\u90b3\u5dde\u7efc\u5408",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221227386/index.m3u8"
           ]
         },
         {
           "name": "\u91d1\u9e70\u5361\u901a",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225620/index.m3u8"
           ]
         },
         {
           "name": "\u98ce\u5c1a\u8d2d\u7269",
-          "url": [
+          "uri": [
             "http://223.110.243.155:80/PLTV/3/224/3221225956/index.m3u8"
           ]
         }
