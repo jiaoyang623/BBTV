@@ -25,5 +25,14 @@
             android:layout_gravity="center"
             android:visibility="@{presenter.isLoading ? View.VISIBLE : View.INVISIBLE}" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="#66000000"
+            android:padding="10dp"
+            android:text="@{(presenter.uriPosition+1)+`/`+presenter.uriCount}"
+            android:textSize="13sp" />
+
     </FrameLayout>
 </layout>

@@ -15,11 +15,25 @@
         android:layout_height="match_parent"
         android:background="#aa000000">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:focusable="false" />
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/sets_recycler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/channel_recycler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false" />
+        </LinearLayout>
 
         <ProgressBar
             android:layout_width="wrap_content"

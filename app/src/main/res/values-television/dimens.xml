@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="channel_text">30sp</dimen>
+    <dimen name="channel_padding_x">20dp</dimen>
+    <dimen name="channel_padding_y">40dp</dimen>
+    <dimen name="channel_width">300dp</dimen>
+    <dimen name="channel_bg_stroke_width">4dp</dimen>
+    <dimen name="channel_bg_stroke_radius">5dp</dimen>
+</resources>

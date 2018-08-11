@@ -9,7 +9,7 @@
 
         <variable
             name="data"
-            type="guru.ioio.alpha.model.ChannelBean" />
+            type="guru.ioio.alpha.model.ChannelSet" />
     </data>
 
     <RelativeLayout
@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/select_background"
         android:focusable="true"
-        android:onClick="@{(v)->presenter.onItemClick(data)}"
+        android:onClick="@{(v)->presenter.onItemFocus(data,true)}"
+        android:onFocusChange="@{(v,b)->presenter.onItemFocus(data,b)}"
         android:selected="@{data.isSelected}">
 
         <TextView

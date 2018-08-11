@@ -2,12 +2,16 @@ package guru.ioio.alpha.player;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ObservableBoolean;
+import android.databinding.ObservableInt;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import guru.ioio.alpha.BaseFragment;
 import guru.ioio.alpha.R;
@@ -20,8 +24,8 @@ public class PlayerFragment extends BaseFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         init(inflater, container);
-        if (mPlayUri != null) {
-            mBinding.player.setVideoPath(mPlayUri);
+        if (mPlayUri != null && mPlayUri.size() > uriPosition.get()) {
+            mBinding.player.setVideoPath(mPlayUri.get(uriPosition.get()));
         }
         return mBinding.getRoot();
     }
@@ -29,7 +33,9 @@ public class PlayerFragment extends BaseFragment {
 
     public ObservableBoolean isLoading = new ObservableBoolean(true);
     private FragmentPlayerBinding mBinding;
-    private String mPlayUri = null;
+    private List<String> mPlayUri = new ArrayList<>();
+    public ObservableInt uriCount = new ObservableInt(0);
+    public ObservableInt uriPosition = new ObservableInt(0);
 
     private void init(LayoutInflater inflater, ViewGroup container) {
         if (mBinding != null) {
@@ -64,13 +70,37 @@ public class PlayerFragment extends BaseFragment {
         }
     }
 
-    public void play(String uri) {
-        if (mPlayUri != null && mPlayUri.equals(uri)) {
+    public void play(List<String> uriList) {
+        if (uriList == null && uriList == mPlayUri) {
             return;
         }
-        mPlayUri = uri;
+        uriPosition.set(0);
+        uriCount.set(uriList.size());
+        mPlayUri = uriList;
         if (mBinding != null) {
-            mBinding.player.setVideoPath(mPlayUri);
+            mBinding.player.setVideoPath(mPlayUri.get(uriPosition.get()));
+        }
+    }
+
+    public void preSource() {
+        int pos = uriPosition.get() - 1;
+        if (pos < 0) {
+            pos += uriCount.get();
+        }
+        uriPosition.set(pos);
+        if (mBinding != null) {
+            mBinding.player.setVideoPath(mPlayUri.get(uriPosition.get()));
+        }
+    }
+
+    public void nextSource() {
+        int pos = uriPosition.get() + 1;
+        if (pos >= uriCount.get()) {
+            pos -= uriCount.get();
+        }
+        uriPosition.set(pos);
+        if (mBinding != null) {
+            mBinding.player.setVideoPath(mPlayUri.get(uriPosition.get()));
         }
     }
 

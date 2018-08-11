@@ -2,29 +2,29 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_focused="true" android:state_selected="true">
         <shape>
-            <corners android:radius="5dp" />
-            <stroke android:width="4dp" android:color="#6611aaff" />
+            <corners android:radius="@dimen/channel_bg_stroke_radius" />
+            <stroke android:width="@dimen/channel_bg_stroke_width" android:color="#6611aaff" />
             <solid android:color="#66aaaaaa" />
         </shape>
     </item>
     <item android:state_focused="false" android:state_selected="true">
         <shape>
-            <corners android:radius="5dp" />
-            <stroke android:width="4dp" android:color="#00ffaa11" />
+            <corners android:radius="@dimen/channel_bg_stroke_radius" />
+            <stroke android:width="@dimen/channel_bg_stroke_width" android:color="#00ffaa11" />
             <solid android:color="#66aaaaaa" />
         </shape>
     </item>
     <item android:state_focused="true" android:state_selected="false">
         <shape>
-            <corners android:radius="5dp" />
-            <stroke android:width="4dp" android:color="#6611aaff" />
+            <corners android:radius="@dimen/channel_bg_stroke_radius" />
+            <stroke android:width="@dimen/channel_bg_stroke_width" android:color="#6611aaff" />
             <solid android:color="#00aaaaaa" />
         </shape>
     </item>
     <item android:state_focused="false" android:state_selected="false">
         <shape>
-            <corners android:radius="5dp" />
-            <stroke android:width="4dp" android:color="#00ffaa11" />
+            <corners android:radius="@dimen/channel_bg_stroke_radius" />
+            <stroke android:width="@dimen/channel_bg_stroke_width" android:color="#00ffaa11" />
             <solid android:color="#00aaaaaa" />
         </shape>
     </item>

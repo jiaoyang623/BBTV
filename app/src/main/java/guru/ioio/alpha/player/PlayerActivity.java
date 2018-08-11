@@ -26,7 +26,7 @@ public class PlayerActivity extends BaseActivity {
 
         mPlayerFragment = new PlayerFragment();
         mChannelFragment = new ChannelFragment();
-        mChannelFragment.setOnChannelClickListener(bean -> mPlayerFragment.play(bean.uri.get(0)));
+        mChannelFragment.setOnChannelClickListener(bean -> mPlayerFragment.play(bean.uri));
 
         FragmentManager manager = getSupportFragmentManager();
         manager.beginTransaction()
@@ -65,12 +65,16 @@ public class PlayerActivity extends BaseActivity {
                 // close
                 switch (keyCode) {
                     case KeyEvent.KEYCODE_DPAD_UP:
-                    case KeyEvent.KEYCODE_DPAD_LEFT:
                         mChannelFragment.upChannel();
                         break;
                     case KeyEvent.KEYCODE_DPAD_DOWN:
-                    case KeyEvent.KEYCODE_DPAD_RIGHT:
                         mChannelFragment.downChannel();
+                        break;
+                    case KeyEvent.KEYCODE_DPAD_LEFT:
+                        mPlayerFragment.preSource();
+                        break;
+                    case KeyEvent.KEYCODE_DPAD_RIGHT:
+                        mPlayerFragment.nextSource();
                         break;
                     case KeyEvent.KEYCODE_DPAD_CENTER:
                     case KeyEvent.KEYCODE_MENU:

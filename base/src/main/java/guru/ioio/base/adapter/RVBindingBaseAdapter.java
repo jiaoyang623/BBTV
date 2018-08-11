@@ -26,7 +26,7 @@ public class RVBindingBaseAdapter<T> extends RecyclerView.Adapter<RVBindingBaseA
         mList.clear();
         if (data != null) {
             mList.addAll(data);
-            notifyItemRangeChanged(0, mList.size());
+            notifyDataSetChanged();
         }
 
         return this;
