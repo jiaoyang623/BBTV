@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BBTV</string>
+    <string name="channel_list_uri">https://raw.githubusercontent.com/jiaoyang623/BBTV/master/app/src/main/assets/channels.json?t=</string>
 </resources>

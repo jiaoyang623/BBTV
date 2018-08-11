@@ -39,12 +39,14 @@ public class PlayerActivity extends BaseActivity {
     private void open() {
         if (mBinding != null) {
             mBinding.drawer.openDrawer(Gravity.LEFT);
+            mChannelFragment.refocus();
         }
     }
 
     private void close() {
         if (mBinding != null) {
             mBinding.drawer.closeDrawer(Gravity.LEFT);
+            mBinding.playerContainer.requestFocus();
         }
     }
 
@@ -52,6 +54,7 @@ public class PlayerActivity extends BaseActivity {
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (mBinding != null) {
             if (mBinding.drawer.isDrawerOpen(Gravity.LEFT)) {
+                // open
                 switch (keyCode) {
                     case KeyEvent.KEYCODE_MENU:
                     case KeyEvent.KEYCODE_BACK:
@@ -59,7 +62,17 @@ public class PlayerActivity extends BaseActivity {
                         return true;
                 }
             } else {
+                // close
                 switch (keyCode) {
+                    case KeyEvent.KEYCODE_DPAD_UP:
+                    case KeyEvent.KEYCODE_DPAD_LEFT:
+                        mChannelFragment.upChannel();
+                        break;
+                    case KeyEvent.KEYCODE_DPAD_DOWN:
+                    case KeyEvent.KEYCODE_DPAD_RIGHT:
+                        mChannelFragment.downChannel();
+                        break;
+                    case KeyEvent.KEYCODE_DPAD_CENTER:
                     case KeyEvent.KEYCODE_MENU:
                         open();
                         return true;

@@ -66,6 +66,10 @@ public class RVBindingBaseAdapter<T> extends RecyclerView.Adapter<RVBindingBaseA
         return this;
     }
 
+    public List<T> getAll() {
+        return mList;
+    }
+
     public RVBindingBaseAdapter<T> remove(T t) {
         if (t != null) {
             int position = mList.indexOf(t);

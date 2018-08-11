@@ -65,6 +65,9 @@ public class PlayerFragment extends BaseFragment {
     }
 
     public void play(String uri) {
+        if (mPlayUri != null && mPlayUri.equals(uri)) {
+            return;
+        }
         mPlayUri = uri;
         if (mBinding != null) {
             mBinding.player.setVideoPath(mPlayUri);

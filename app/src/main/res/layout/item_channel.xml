@@ -17,12 +17,18 @@
         android:layout_height="wrap_content"
         android:background="@drawable/select_background"
         android:focusable="true"
-        android:onClick="@{(v)->presenter.onItemClick(data)}">
+        android:onClick="@{(v)->presenter.onItemClick(data)}"
+        android:selected="@{data.isSelected}">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:ellipsize="marquee"
+            android:paddingBottom="20dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="20dp"
+            android:singleLine="true"
             android:text="@{data.name}"
             android:textSize="30sp" />
     </RelativeLayout>
