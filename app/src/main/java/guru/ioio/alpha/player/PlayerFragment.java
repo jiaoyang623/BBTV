@@ -71,7 +71,7 @@ public class PlayerFragment extends BaseFragment {
     }
 
     public void play(List<String> uriList) {
-        if (uriList == null && uriList == mPlayUri) {
+        if (uriList == null || uriList == mPlayUri) {
             return;
         }
         uriPosition.set(0);

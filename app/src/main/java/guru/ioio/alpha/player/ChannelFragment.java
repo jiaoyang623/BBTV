@@ -17,6 +17,7 @@ import com.google.gson.Gson;
 import org.apache.commons.io.IOUtils;
 
 import java.net.URI;
+import java.nio.channels.Channels;
 import java.util.List;
 
 import guru.ioio.alpha.BR;
@@ -85,60 +86,39 @@ public class ChannelFragment extends BaseFragment {
         }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(
                 list -> {
                     mSetAdapter.add((List<ChannelSet>) list);
-                    HandlerUtils.getMain().postDelayed(ChannelFragment.this::loadPosition, 100);
+                    HandlerUtils.getMain().postDelayed(ChannelFragment.this::loadSet, 100);
                 },
                 e -> {
                 },
                 () -> isLoading.set(false));
     }
 
-    private void loadPosition() {
-//        String lastName = PreferenceUtils.get().getString(KEY_CHANNEL, null);
-//        int pos = 0;
-//        if (!TextUtils.isEmpty(lastName)) {
-//            for (int i = mAdapter.getItemCount() - 1; i != -1; i--) {
-//                ChannelBean bean = mAdapter.getItem(i);
-//                if (lastName.equals(bean.name)) {
-//                    pos = i;
-//                    break;
-//                }
-//            }
-//        }
-//        setSelection(pos);
-    }
-
-    public void setSelection(int position) {
-//        if (mBinding != null && mAdapter.getItemCount() > position) {
-//            onItemClick(mAdapter.getItem(position));
-//            refocus();
-//        }
-    }
-
-    public void refocus() {
-//        if (mBinding != null && mAdapter.getItemCount() > 0) {
-//            int pos = 0;
-//            for (ChannelBean bean : mAdapter.getAll()) {
-//                if (bean.isSelected.get()) {
-//                    break;
-//                } else {
-//                    pos++;
-//                }
-//            }
-//            if (pos >= mAdapter.getItemCount()) {
-//                pos = 0;
-//            }
-//            mBinding.recycler.smoothScrollToPosition(pos);
-//            int finalPos = pos;
-//            HandlerUtils.getMain().postDelayed(() -> {
-//                View v = mBinding.recycler.getLayoutManager().findViewByPosition(finalPos);
-//                if (v != null) {
-//                    v.requestFocus();
-//                }
-//            }, 200);
-//        }
+    public void loadSet() {
+        if (mBinding == null) {
+            return;
+        }
+        String lastSet = PreferenceUtils.get().getString(KEY_SET, null);
+        int pos = 0;
+        if (!TextUtils.isEmpty(lastSet)) {
+            for (int i = mSetAdapter.getItemCount() - 1; i != -1; i--) {
+                if (lastSet.equals(mSetAdapter.getItem(i).name)) {
+                    pos = i;
+                    break;
+                }
+            }
+        }
+        mBinding.setsRecycler.smoothScrollToPosition(pos);
+        int finalPos = pos;
+        HandlerUtils.getMain().postDelayed(() -> {
+            View v = mBinding.setsRecycler.getLayoutManager().findViewByPosition(finalPos);
+            if (v != null) {
+                v.requestFocus();
+            }
+        }, 200);
     }
 
     private static final String KEY_CHANNEL = "guru.ioio.alpha.player.channel";
+    private static final String KEY_SET = "guru.ioio.alpha.player.set";
 
     public void onItemFocus(ChannelSet bean, boolean isSelected) {
         if (isSelected) {
@@ -146,7 +126,27 @@ public class ChannelFragment extends BaseFragment {
                 b.isSelected.set(false);
             }
             bean.isSelected.set(true);
+            PreferenceUtils.edit().putString(KEY_SET, bean.name).apply();
             mChannelAdapter.set(bean.channels);
+            int pos = 0;
+            String lastChannel = PreferenceUtils.get().getString(KEY_CHANNEL, null);
+            if (!TextUtils.isEmpty(lastChannel)) {
+                for (int i = mChannelAdapter.getItemCount() - 1; i != -1; i--) {
+                    if (lastChannel.equals(mChannelAdapter.getItem(i).name)) {
+                        pos = i;
+                        break;
+                    }
+                }
+            }
+            mBinding.channelRecycler.smoothScrollToPosition(pos);
+            int finalPos = pos;
+            HandlerUtils.getMain().postDelayed(() -> {
+                View v = mBinding.channelRecycler.getLayoutManager().findViewByPosition(finalPos);
+                if (v != null) {
+                    v.requestFocus();
+                    v.performClick();
+                }
+            }, 200);
         }
     }
 
@@ -166,26 +166,30 @@ public class ChannelFragment extends BaseFragment {
     }
 
     private int findSelected() {
-//        for (int i = mAdapter.getItemCount() - 1; i != -1; i--) {
-//            if (mAdapter.getItem(i).isSelected.get()) {
-//                return i;
-//            }
-//        }
+        for (int i = mChannelAdapter.getItemCount() - 1; i != -1; i--) {
+            if (mChannelAdapter.getItem(i).isSelected.get()) {
+                return i;
+            }
+        }
         return -1;
     }
 
     public void upChannel() {
-//        int pos = findSelected();
-//        if (pos > 0 && pos < mAdapter.getItemCount()) {
-//            setSelection(pos - 1);
-//        }
+        int pos = findSelected();
+        if (pos > 0 && pos < mChannelAdapter.getItemCount()) {
+            setSelection(pos - 1);
+        }
     }
 
     public void downChannel() {
-//        int pos = findSelected();
-//        if (pos > 0 && pos < mAdapter.getItemCount() - 1) {
-//            setSelection(pos + 1);
-//        }
+        int pos = findSelected();
+        if (pos > 0 && pos < mChannelAdapter.getItemCount() - 1) {
+            setSelection(pos + 1);
+        }
+    }
+
+    public void setSelection(int selection) {
+        onItemClick(mChannelAdapter.getItem(selection));
     }
 
     public interface OnChannelClickListener {

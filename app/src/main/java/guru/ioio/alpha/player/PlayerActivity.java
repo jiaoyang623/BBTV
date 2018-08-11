@@ -39,7 +39,7 @@ public class PlayerActivity extends BaseActivity {
     private void open() {
         if (mBinding != null) {
             mBinding.drawer.openDrawer(Gravity.LEFT);
-            mChannelFragment.refocus();
+            mChannelFragment.loadSet();
         }
     }
 
