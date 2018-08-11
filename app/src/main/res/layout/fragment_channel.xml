@@ -7,17 +7,19 @@
 
         <variable
             name="presenter"
-            type="guru.ioio.alpha.ChannelListActivity" />
+            type="guru.ioio.alpha.player.ChannelFragment" />
     </data>
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#aa000000">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:focusable="false" />
 
         <ProgressBar
             android:layout_width="wrap_content"

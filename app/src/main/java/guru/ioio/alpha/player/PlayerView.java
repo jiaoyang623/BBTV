@@ -51,6 +51,7 @@ public class PlayerView extends FrameLayout {
     private void initVideoView(Context context) {
         mContext = context;
 
+        setKeepScreenOn(true);
         //获取焦点，不知道有没有必要~。~
         setFocusable(true);
         setBackgroundColor(0xff000000);

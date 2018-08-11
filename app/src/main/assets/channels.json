@@ -1,91 +1,91 @@
 {
   "list": [
     {
-      "name": "中央1",
+      "name": "央视1",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv1.m3u8"
       ]
     },
     {
-      "name": "中央2",
+      "name": "央视2",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv2.m3u8"
       ]
     },
     {
-      "name": "中央3",
+      "name": "央视3",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv3.m3u8"
       ]
     },
     {
-      "name": "中央4",
+      "name": "央视4",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv4.m3u8"
       ]
     },
     {
-      "name": "中央5",
+      "name": "央视5",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv5.m3u8"
       ]
     },
     {
-      "name": "中央6",
+      "name": "央视6",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv6.m3u8"
       ]
     },
     {
-      "name": "中央7",
+      "name": "央视7",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv7.m3u8"
       ]
     },
     {
-      "name": "中央8",
+      "name": "央视8",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv8.m3u8"
       ]
     },
     {
-      "name": "中央9",
+      "name": "央视9",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv9.m3u8"
       ]
     },
     {
-      "name": "中央10",
+      "name": "央视10",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv10.m3u8"
       ]
     },
     {
-      "name": "中央11",
+      "name": "央视11",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv11.m3u8"
       ]
     },
     {
-      "name": "中央12",
+      "name": "央视12",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv12.m3u8"
       ]
     },
     {
-      "name": "中央13",
+      "name": "央视13",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv13.m3u8"
       ]
     },
     {
-      "name": "中央14",
+      "name": "央视14",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv14.m3u8"
       ]
     },
     {
-      "name": "中央15",
+      "name": "央视15",
       "uri": [
         "http://ivi.bupt.edu.cn/hls/cctv15.m3u8"
       ]
