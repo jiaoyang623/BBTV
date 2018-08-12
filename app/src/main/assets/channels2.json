@@ -27,6 +27,7 @@
         {
           "name": "CCTV3",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv3.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-3/cctv-3",
             "http://124.47.33.200/PLTV/88888888/224/3221225611/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225588/index.m3u8",
@@ -36,6 +37,7 @@
         {
           "name": "CCTV4",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv4.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-4/cctv-4",
             "http://223.110.243.155:80/PLTV/3/224/3221225534/index.m3u8",
             "http://124.47.33.200/PLTV/88888888/224/3221225610/index.m3u8"
@@ -44,6 +46,7 @@
         {
           "name": "CCTV5",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv5.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-5/cctv-5",
             "http://124.47.33.200/PLTV/88888888/224/3221225489/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221226324/index.m3u8",
@@ -63,6 +66,7 @@
         {
           "name": "CCTV6",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv6.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-6/cctv-6",
             "http://124.47.33.200/PLTV/88888888/224/3221225609/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221225548/index.m3u8",
@@ -72,6 +76,7 @@
         {
           "name": "CCTV7",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv7.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-7/cctv-7",
             "http://223.110.243.155:80/PLTV/3/224/3221225546/index.m3u8",
             "http://124.47.33.200/PLTV/88888888/224/3221225608/index.m3u8",
@@ -81,6 +86,7 @@
         {
           "name": "CCTV8",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv8.m3u8",
             "http://223.110.241.204:6610/cntv/live1/HD-2500k-1080P-cctv8/HD-2500k-1080P-cctv8",
             "http://124.47.33.200/PLTV/88888888/224/3221225492/index.m3u8",
             "http://223.110.243.155:80/PLTV/3/224/3221227204/index.m3u8",
@@ -91,6 +97,7 @@
         {
           "name": "CCTV9",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv9.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-9/cctv-9",
             "http://223.110.243.155:80/PLTV/3/224/3221225532/index.m3u8"
           ]
@@ -98,6 +105,7 @@
         {
           "name": "CCTV10",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv10.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-10/cctv-10",
             "http://223.110.243.155:80/PLTV/3/224/3221225550/index.m3u8"
           ]
@@ -105,6 +113,7 @@
         {
           "name": "CCTV11",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv11.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-11/cctv-11",
             "http://223.110.243.155:80/PLTV/3/224/3221225552/index.m3u8"
           ]
@@ -112,6 +121,7 @@
         {
           "name": "CCTV12",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv12.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-12/cctv-12",
             "http://223.110.243.155:80/PLTV/3/224/3221225556/index.m3u8",
             "http://124.47.33.200/PLTV/88888888/224/3221225605/index.m3u8",
@@ -121,6 +131,7 @@
         {
           "name": "CCTV13",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv13.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-13/cctv-13",
             "http://223.110.243.155:80/PLTV/3/224/3221225560/index.m3u8"
           ]
@@ -128,6 +139,7 @@
         {
           "name": "CCTV14",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv14.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-14/cctv-14",
             "http://223.110.243.155:80/PLTV/3/224/3221227201/index.m3u8",
             "http://124.47.33.200/PLTV/88888888/224/3221225604/index.m3u8",
@@ -137,6 +149,7 @@
         {
           "name": "CCTV15",
           "uri": [
+            "http://ivi.bupt.edu.cn/hls/cctv15.m3u8",
             "http://223.110.241.204:6610/cntv/live1/cctv-15/cctv-15",
             "http://223.110.243.155:80/PLTV/3/224/3221225568/index.m3u8"
           ]
