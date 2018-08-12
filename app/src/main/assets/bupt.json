@@ -1,173 +1,6 @@
 {
   "list": [
     {
-      "name": "\u536b\u89c6",
-      "channels": [
-        {
-          "name": "CHCHD\u7535\u5f71",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/chchd.m3u8"
-          ]
-        },
-        {
-          "name": "\u4e1c\u65b9\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/dftv.m3u8"
-          ]
-        },
-        {
-          "name": "\u4e91\u5357\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/yntv.m3u8"
-          ]
-        },
-        {
-          "name": "\u5175\u56e2\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/bttv.m3u8"
-          ]
-        },
-        {
-          "name": "\u5409\u6797\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/jltv.m3u8"
-          ]
-        },
-        {
-          "name": "\u5929\u6d25\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/tjhd.m3u8",
-            "http://ivi.bupt.edu.cn/hls/tjtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u5b81\u590f\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/nxtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u5b89\u5fbd\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/ahtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u5c71\u4e1c\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/sdhd.m3u8",
-            "http://ivi.bupt.edu.cn/hls/sdtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u5e7f\u4e1c\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/gdhd.m3u8"
-          ]
-        },
-        {
-          "name": "\u5e7f\u897f\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/gxtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u65b0\u7586\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/xjtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u6c5f\u82cf\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/jshd.m3u8"
-          ]
-        },
-        {
-          "name": "\u6c5f\u897f\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/jxtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u6cb3\u5317\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/hebtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u6cb3\u5357\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/hntv.m3u8"
-          ]
-        },
-        {
-          "name": "\u6d59\u6c5f\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/zjtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u6df1\u5733\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/szhd.m3u8",
-            "http://ivi.bupt.edu.cn/hls/sztv.m3u8"
-          ]
-        },
-        {
-          "name": "\u6e56\u5317\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/hbhd.m3u8"
-          ]
-        },
-        {
-          "name": "\u6e56\u5357\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/hunanhd.m3u8",
-            "http://ivi.bupt.edu.cn/hls/hunantv.m3u8"
-          ]
-        },
-        {
-          "name": "\u798f\u5efa\u4e1c\u5357\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/dntv.m3u8"
-          ]
-        },
-        {
-          "name": "\u8d35\u5dde\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/gztv.m3u8"
-          ]
-        },
-        {
-          "name": "\u8fbd\u5b81\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/lnhd.m3u8",
-            "http://ivi.bupt.edu.cn/hls/lntv.m3u8"
-          ]
-        },
-        {
-          "name": "\u91cd\u5e86\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/cqhd.m3u8"
-          ]
-        },
-        {
-          "name": "\u9655\u897f\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/sxtv.m3u8"
-          ]
-        },
-        {
-          "name": "\u9ed1\u9f99\u6c5f\u536b\u89c6",
-          "url": [
-            "http://ivi.bupt.edu.cn/hls/hljhd.m3u8",
-            "http://ivi.bupt.edu.cn/hls/hljtv.m3u8"
-          ]
-        }
-      ]
-    },
-    {
       "name": "CCTV",
       "channels": [
         {
@@ -336,6 +169,173 @@
           "name": "\u5317\u4eac\u9752\u5e74",
           "url": [
             "http://ivi.bupt.edu.cn/hls/btv8.m3u8"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "\u536b\u89c6",
+      "channels": [
+        {
+          "name": "CHCHD\u7535\u5f71",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/chchd.m3u8"
+          ]
+        },
+        {
+          "name": "\u4e1c\u65b9\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/dftv.m3u8"
+          ]
+        },
+        {
+          "name": "\u4e91\u5357\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/yntv.m3u8"
+          ]
+        },
+        {
+          "name": "\u5175\u56e2\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/bttv.m3u8"
+          ]
+        },
+        {
+          "name": "\u5409\u6797\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/jltv.m3u8"
+          ]
+        },
+        {
+          "name": "\u5929\u6d25\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/tjhd.m3u8",
+            "http://ivi.bupt.edu.cn/hls/tjtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u5b81\u590f\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/nxtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u5b89\u5fbd\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/ahtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u5c71\u4e1c\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/sdhd.m3u8",
+            "http://ivi.bupt.edu.cn/hls/sdtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u5e7f\u4e1c\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/gdhd.m3u8"
+          ]
+        },
+        {
+          "name": "\u5e7f\u897f\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/gxtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u65b0\u7586\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/xjtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u6c5f\u82cf\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/jshd.m3u8"
+          ]
+        },
+        {
+          "name": "\u6c5f\u897f\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/jxtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u6cb3\u5317\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/hebtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u6cb3\u5357\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/hntv.m3u8"
+          ]
+        },
+        {
+          "name": "\u6d59\u6c5f\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/zjtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u6df1\u5733\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/szhd.m3u8",
+            "http://ivi.bupt.edu.cn/hls/sztv.m3u8"
+          ]
+        },
+        {
+          "name": "\u6e56\u5317\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/hbhd.m3u8"
+          ]
+        },
+        {
+          "name": "\u6e56\u5357\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/hunanhd.m3u8",
+            "http://ivi.bupt.edu.cn/hls/hunantv.m3u8"
+          ]
+        },
+        {
+          "name": "\u798f\u5efa\u4e1c\u5357\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/dntv.m3u8"
+          ]
+        },
+        {
+          "name": "\u8d35\u5dde\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/gztv.m3u8"
+          ]
+        },
+        {
+          "name": "\u8fbd\u5b81\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/lnhd.m3u8",
+            "http://ivi.bupt.edu.cn/hls/lntv.m3u8"
+          ]
+        },
+        {
+          "name": "\u91cd\u5e86\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/cqhd.m3u8"
+          ]
+        },
+        {
+          "name": "\u9655\u897f\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/sxtv.m3u8"
+          ]
+        },
+        {
+          "name": "\u9ed1\u9f99\u6c5f\u536b\u89c6",
+          "url": [
+            "http://ivi.bupt.edu.cn/hls/hljhd.m3u8",
+            "http://ivi.bupt.edu.cn/hls/hljtv.m3u8"
           ]
         }
       ]
