@@ -93,10 +93,22 @@ public class ChannelFragment extends BaseFragment {
                 () -> isLoading.set(false));
     }
 
+
     public void loadSet() {
         if (mBinding == null) {
             return;
         }
+        if (mPlayingBean != null) {
+            int index = mChannelAdapter.indexOf(mPlayingBean);
+            if (index >= 0) {
+                View v = mBinding.channelRecycler.getLayoutManager().findViewByPosition(index);
+                if (v != null) {
+                    v.requestFocus();
+                    return;
+                }
+            }
+        }
+
         String lastSet = PreferenceUtils.get().getString(KEY_SET, null);
         int pos = 0;
         if (!TextUtils.isEmpty(lastSet)) {
@@ -107,53 +119,59 @@ public class ChannelFragment extends BaseFragment {
                 }
             }
         }
-        mBinding.setsRecycler.smoothScrollToPosition(pos);
-        int finalPos = pos;
-        HandlerUtils.getMain().postDelayed(() -> {
-            View v = mBinding.setsRecycler.getLayoutManager().findViewByPosition(finalPos);
-            if (v != null) {
-                v.requestFocus();
-            }
-        }, 200);
+        mBinding.setsRecycler.scrollToPosition(pos);
+        View v = mBinding.setsRecycler.getLayoutManager().findViewByPosition(pos);
+        if (v != null) {
+            v.requestFocus();
+        }
     }
 
     private static final String KEY_CHANNEL = "guru.ioio.alpha.player.channel";
     private static final String KEY_SET = "guru.ioio.alpha.player.set";
 
+    private ChannelSet mPlayingSet = null;
+
     public void onItemFocus(ChannelSet bean, boolean isSelected) {
         if (isSelected) {
-            for (ChannelSet b : mSetAdapter.getAll()) {
-                b.isSelected.set(false);
+            if (mPlayingSet != null) {
+                mPlayingSet.isSelected.set(false);
             }
+            mPlayingSet = bean;
             bean.isSelected.set(true);
             PreferenceUtils.edit().putString(KEY_SET, bean.name).apply();
             mChannelAdapter.set(bean.channels);
-            int pos = 0;
-            String lastChannel = PreferenceUtils.get().getString(KEY_CHANNEL, null);
-            if (!TextUtils.isEmpty(lastChannel)) {
-                for (int i = mChannelAdapter.getItemCount() - 1; i != -1; i--) {
-                    if (lastChannel.equals(mChannelAdapter.getItem(i).name)) {
-                        pos = i;
-                        break;
-                    }
-                }
-            }
-            mBinding.channelRecycler.smoothScrollToPosition(pos);
-            int finalPos = pos;
-            HandlerUtils.getMain().postDelayed(() -> {
-                View v = mBinding.channelRecycler.getLayoutManager().findViewByPosition(finalPos);
-                if (v != null) {
-                    v.requestFocus();
-                    v.performClick();
-                }
-            }, 200);
+            HandlerUtils.getMain().post(this::findChannelFocus);
         }
     }
 
-    public boolean onItemClick(ChannelBean bean) {
-        for (ChannelBean b : mChannelAdapter.getAll()) {
-            b.isSelected.set(false);
+    private void findChannelFocus() {
+        int pos = 0;
+        String lastChannel = PreferenceUtils.get().getString(KEY_CHANNEL, null);
+        if (!TextUtils.isEmpty(lastChannel)) {
+            for (int i = mChannelAdapter.getItemCount() - 1; i != -1; i--) {
+                if (lastChannel.equals(mChannelAdapter.getItem(i).name)) {
+                    pos = i;
+                    break;
+                }
+            }
         }
+        mBinding.channelRecycler.scrollToPosition(pos);
+        View v = mBinding.channelRecycler.getLayoutManager().findViewByPosition(pos);
+        if (v != null) {
+            if (mPlayingBean == null) {
+                v.requestFocus();
+                v.performClick();
+            }
+        }
+    }
+
+    private ChannelBean mPlayingBean = null;
+
+    public boolean onItemClick(ChannelBean bean) {
+        if (mPlayingBean != null) {
+            mPlayingBean.isSelected.set(false);
+        }
+        mPlayingBean = bean;
         bean.isSelected.set(true);
 
         PreferenceUtils.edit().putString(KEY_CHANNEL, bean.name).apply();
