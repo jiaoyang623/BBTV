@@ -142,22 +142,19 @@ public class PlayerView extends FrameLayout {
 
         if (listener != null) {
             mMediaPlayer.setOnPreparedListener(listener);
-            mMediaPlayer.setOnInfoListener(new IMediaPlayer.OnInfoListener() {
-                @Override
-                public boolean onInfo(IMediaPlayer iMediaPlayer, int i, int i1) {
-                    if (listener != null) {
-                        listener.onInfo(iMediaPlayer, i, i1);
-                    }
-
-                    int w = mMediaPlayer.getVideoWidth();
-                    int h = mMediaPlayer.getVideoHeight();
-                    if (w + h != 0 && (mVideoWidth != w || mVideoHeight != h)) {
-                        mVideoWidth = w;
-                        mVideoHeight = h;
-                        requestLayout();
-                    }
-                    return false;
+            mMediaPlayer.setOnInfoListener((iMediaPlayer, i, i1) -> {
+                if (listener != null) {
+                    listener.onInfo(iMediaPlayer, i, i1);
                 }
+
+                int w = mMediaPlayer.getVideoWidth();
+                int h = mMediaPlayer.getVideoHeight();
+                if (w + h != 0 && (mVideoWidth != w || mVideoHeight != h)) {
+                    mVideoWidth = w;
+                    mVideoHeight = h;
+                    requestLayout();
+                }
+                return false;
             });
             mMediaPlayer.setOnSeekCompleteListener(listener);
             mMediaPlayer.setOnBufferingUpdateListener(listener);
